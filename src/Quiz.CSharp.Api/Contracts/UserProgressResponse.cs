@@ -25,8 +25,8 @@ public sealed record UserProgressManagementResponse
     public int CorrectAnswers { get; init; }
     public decimal SuccessRate { get; init; }
     public decimal CompletionRate { get; init; }
-    public DateTime LastAnsweredAt { get; init; }
-    public DateTime CreatedAt { get; init; }
+    public DateTimeOffset LastAnsweredAt { get; init; }
+    public DateTimeOffset CreatedAt { get; init; }
     public DateTimeOffset? UpdatedAt { get; init; }
 }
 
@@ -56,7 +56,7 @@ public sealed record CollectionProgressResponse
     public int CorrectAnswers { get; init; }
     public decimal SuccessRate { get; init; }
     public decimal CompletionRate { get; init; }
-    public DateTime LastAnsweredAt { get; init; }
+    public DateTimeOffset LastAnsweredAt { get; init; }
     public DateTimeOffset CreatedAt { get; init; }
     public DateTimeOffset? UpdatedAt { get; init; }
 }
